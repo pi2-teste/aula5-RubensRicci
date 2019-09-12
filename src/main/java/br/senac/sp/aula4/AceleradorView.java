@@ -39,18 +39,68 @@ public class AceleradorView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        AceleradorView = new javax.swing.JFormattedTextField();
+        lblVelocidadeAtual = new javax.swing.JLabel();
+        btnAcelerar = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        btnFrear = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Piloto Automático");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/velocidade.png"))); // NOI18N
+
+        lblVelocidadeAtual.setText("jLabel2");
+
+        btnAcelerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/seta-cima.png"))); // NOI18N
+
+        jTextField1.setToolTipText("");
+
+        btnFrear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/seta-baixo.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 441, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblVelocidadeAtual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(58, 58, 58)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnFrear)
+                        .addGap(18, 18, 18)
+                        .addComponent(AceleradorView))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnAcelerar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 292, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnAcelerar)
+                    .addComponent(jLabel1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnFrear))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(AceleradorView, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(lblVelocidadeAtual)))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         pack();
@@ -96,5 +146,11 @@ public class AceleradorView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFormattedTextField AceleradorView;
+    private javax.swing.JButton btnAcelerar;
+    private javax.swing.JButton btnFrear;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblVelocidadeAtual;
     // End of variables declaration//GEN-END:variables
 }

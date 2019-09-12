@@ -69,6 +69,7 @@ public class Carro {
     
     public void frear(){
         this.velocidadeAtual-=10;
+        
         if(this.velocidadeAtual <0){
            this.velocidadeAtual=0;
         }
